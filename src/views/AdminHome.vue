@@ -53,35 +53,35 @@
                         <el-button size="medium" type="menu" @click="handleCollapse"><i class="el-icon-s-operation"></i>
                         </el-button>
                     </el-col>
-                    <el-col :span="23">
-                        <el-dropdown
-                                size="medium"
-                                placement="bottom"
-                                trigger="click"
-                                @command="batchOperate"
-                                style="margin-left: 10px;">
-                            <el-button type="info" size="medium" plain>
-                                {{userName}}
-                                <i class="el-icon-arrow-down el-icon--right"></i>
-                            </el-button>
-                            <el-dropdown-menu slot="dropdown">
-                                <el-dropdown-item command="loginout">
-                                    <i class="el-icon-switch-button"></i>
-                                    登出
-                                </el-dropdown-item>
-                                <el-dropdown-item command="change">
-                                    <i class="el-icon-edit" circle></i>
-                                    修改密码
-                                </el-dropdown-item>
-                            </el-dropdown-menu>
-                        </el-dropdown>
-                    </el-col>
+<!--                    <el-col :span="23">-->
+<!--                        <el-dropdown-->
+<!--                                size="medium"-->
+<!--                                placement="bottom"-->
+<!--                                trigger="click"-->
+<!--                                @command="batchOperate"-->
+<!--                                style="margin-left: 10px;">-->
+<!--                            <el-button type="info" size="medium" plain>-->
+<!--                                {{userName}}-->
+<!--                                <i class="el-icon-arrow-down el-icon&#45;&#45;right"></i>-->
+<!--                            </el-button>-->
+<!--                            <el-dropdown-menu slot="dropdown">-->
+<!--                                <el-dropdown-item command="loginout">-->
+<!--                                    <i class="el-icon-switch-button"></i>-->
+<!--                                    登出-->
+<!--                                </el-dropdown-item>-->
+<!--                                <el-dropdown-item command="change">-->
+<!--                                    <i class="el-icon-edit" circle></i>-->
+<!--                                    修改密码-->
+<!--                                </el-dropdown-item>-->
+<!--                            </el-dropdown-menu>-->
+<!--                        </el-dropdown>-->
+<!--                    </el-col>-->
                 </el-header>
                 <div style="height: 800px;overflow: auto">
                     <router-view></router-view>
                 </div>
                 <!--                <el-main ><router-view></router-view></el-main>-->
-                <el-footer><br><br><br>Copyright 发际线与我作队</el-footer>
+                <el-footer><br><br><br>Copyright 第一组</el-footer>
             </el-container>
         </el-container>
         <!--    <el-button type="primary" round @click="submit">跳转</el-button>-->
