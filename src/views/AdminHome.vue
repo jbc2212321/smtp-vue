@@ -38,10 +38,10 @@
                     </el-menu-item>
                 </router-link>
 
-                <router-link to="TodoList" class="a">
+                <router-link to="/admin/MyData" class="a">
                     <el-menu-item index="5">
                         <i class="el-icon-message-solid"></i>
-                        <span slot="title">待办事项</span>
+                        <span slot="title">修改端口</span>
                     </el-menu-item>
                 </router-link>
             </el-menu>

@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Login from '@/views/Login'
 import AdminHome from "../views/AdminHome";
 import UserManagement from "../components/UserManagement";
+import MyData from "../components/MyData";
 Vue.use(VueRouter)
 
 const routes = [
@@ -23,6 +24,13 @@ const routes = [
       {
         path: '/admin/UserManagement',
         component: UserManagement,
+        meta: {
+          requireAuth: true,
+        },
+      },
+      {
+        path: '/admin/MyData',
+        component: MyData,
         meta: {
           requireAuth: true,
         },
